@@ -18,6 +18,11 @@ angular.module('starter', ['ionic','firebase'])
         templateUrl: "views/dashboard/dashboard.html",
         controller: "dashboardController"
       })
+      .state("foodMenu", {
+        url: "/foodMenu:restaurantUid",
+        templateUrl: "views/foodMenu/foodMenu.html",
+        controller: "foodMenuController"
+      })
       .state("inbox", {
         url: "/inbox:recipientUid",
         templateUrl: "views/inbox/inbox.html",

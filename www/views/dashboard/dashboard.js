@@ -10,18 +10,15 @@ angular.module("starter")
     });
 
 
-
-
-
-    $scope.ref.child("userProfiles").on("value", function (snap) {
+    $scope.ref.child("restaurants").on("value", function (snap) {
 
       $scope.authData = universalService.authData;
-      $scope.userlist = [];
+      $scope.restaurantsList = [];
 
-      $rootScope.ref.child("userProfiles").on("child_added", function (snapShot) {
+      $rootScope.ref.child("restaurants").on("child_added", function (snapShot) {
 
         //$rootScope.ref.child("userProfiles").child(snapShot.key()).child("loggedIn").update({ status : null});
-        $scope.userlist.push(snapShot.val());
+        $scope.restaurantsList.push(snapShot.val());
         $scope.$apply();
       });
 
