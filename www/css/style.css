@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+
+
+
+.messageFromRecepient {
+  padding-right: 0px
+}
+
+.messageFromMe {
+}
+
+
+.h{
+  display: none;
+}
+
+
+.lowOpacity
+{
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.circle {
+  border-radius: 50%;
+}
